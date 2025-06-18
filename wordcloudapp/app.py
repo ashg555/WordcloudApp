@@ -11,6 +11,9 @@ from matplotlib.cm import plasma
 char_name = ""
 st.session_state.show_editors = True
 
+current_script_dir = os.path.dirname(__file__)
+font_file_path = os.path.join(current_script_dir, "fonts", "SourceSansPro-Regular.ttf")
+
 # Initialize session state
 if "current_character" not in st.session_state:
     st.session_state.current_character = None
@@ -157,15 +160,19 @@ def trait_editor(traits):
 #     return {k: int(v * max_weight / max_val) 
 #             for k, v in traits.items()}
 
-
 def render_wordcloud(traits):
     if not traits:
         st.text("No traits to display yet.")
         return
+    
+    if not os.path.exists(font_file_path):
+        st.error(f"Error: Font file not found at: {font_file_path}")
+        return
+    
     wc = WordCloud(
-        font_path='SourceSansPro-Regular.ttf',
         width=800, 
         height=400, 
+        font_path=font_file_path,
         background_color="white", 
         colormap="plasma")
     
