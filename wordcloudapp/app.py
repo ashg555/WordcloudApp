@@ -12,7 +12,7 @@ char_name = ""
 st.session_state.show_editors = True
 
 current_script_dir = os.path.dirname(__file__)
-font_file_path = os.path.join(current_script_dir, "fonts", "SourceSansPro-Regular.ttf")
+font_file_path = os.path.join(current_script_dir, "SourceSansPro-Regular.ttf")
 
 # Initialize session state
 if "current_character" not in st.session_state:
