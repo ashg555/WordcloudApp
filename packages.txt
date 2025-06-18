@@ -1,0 +1,2 @@
+fontconfig
+libfreetype6-dev
