@@ -3,6 +3,7 @@ Required Python packages:
   - google-genai
   - matplotlib
   - streamlit
+  - python-dotenv
 
 To run:
   - Set your Gemini API key in a .env file as 'GEMINI_API_KEY'
