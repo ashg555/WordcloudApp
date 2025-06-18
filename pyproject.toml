@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Streamlit Wordcloud App"
 authors = ["ashg555"]
 readme = "README.md"
-packages = [{include = "wordcloud_app"}]
+packages = [{include = "wordcloudapp"}]
 
 [tool.poetry.dependencies]
 python = ">=3.12"
