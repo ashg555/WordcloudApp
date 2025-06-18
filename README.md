@@ -2,6 +2,7 @@ Required Python packages:
   - wordcloud
   - google-genai
   - matplotlib
+  - streamlit
 
 To run:
   - Set your Gemini API key in a .env file as 'GEMINI_API_KEY'
