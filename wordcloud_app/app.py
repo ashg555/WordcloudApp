@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import json
 import os
 from datetime import datetime
-from gemini_helper import generate_traits, ask_question
+from wordcloud_app.gemini_helper import generate_traits, ask_question
 from matplotlib.colors import to_hex
 from matplotlib.cm import plasma
 

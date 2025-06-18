@@ -1,15 +1,18 @@
-[project]
-name = "wordcloud_app"
+[tool.poetry]
+name = "wordcloudapp"
 version = "0.1.0"
-description = ""
-requires-python = ">=3.12"
-dependencies = [
-    "wordcloud",
-    "google-genai",
-    "matplotlib",
-    "streamlit",
-]
+description = "Streamlit Wordcloud App"
+authors = ["ashg555"]
+readme = "README.md"
+packages = [{include = "wordcloud_app"}]
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+wordcloud = "^1.9.4"
+google-genai = "^1.20.0"
+matplotlib = "^3.10.3"
+streamlit = "^1.45.1"
 
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
